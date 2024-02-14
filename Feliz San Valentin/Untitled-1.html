@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia del San Valentin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav a:hover span{
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+        nav a span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-bottom: 2px solid rgb(43, 0, 158);
+            border-radius: 15px;
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+            transition: .5s;
+        }
+        nav a:hover{
+            color: rgb(129, 0, 0);
+        }
+        nav a {
+            font-size: 2vw;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        img {
+        display: block;
+        margin: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body background="1267.avif"></body>
+    <h1 style="color: white; text-align: center; font-size: 4vw;">❤️❤️Sabia que ibas a decir que si❤️❤️</h1>
+    <img id="myImage" onclick="changeImage()" src="bubu.gif" width="250" height="250">
+    <h2 style="color: white; text-align: center; font-size: 3vw;">😍😍❤️Como te amo mi princesa hermosa❤️😍😍</h2>
+    <div class="container">
+    <nav>
+        <a href="#"onclick="changeImage()">Si<span></span></a>
+        <a href="Navbar.html" onclick="changeImage()">No<span></span></a>
+        <script>
+            var images = ["bubu2.gif", "sweet.gif","tkthao219-bubududu.gif", "peach-goma-peach-and-goma.gif", "bubu-sport-bubu-dudu-sport.gif", "gấu-con-icon.gif", "i-love-you-love.gif", "dudu-love-bubu-love.gif", "bubu-rose-bubu-sweet.gif"];
+            var currentImageIndex = 0;
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                image.src = images[currentImageIndex];
+            }
+        </script>
+    </nav>
+    <table>
+        <tr>
+            <td><img src="1.jpg" width=220 height="220"> </td>
+            <td><img src="2.jpg" width=220 height="220"> </td>
+            <td><img src="3.jpg" width=220 height="220"> </td>
+            <td><img src="4.jpg" width=220 height="220"> </td>
+            <td><img src="5.jpg" width=220 height="220"> </td>
+        </tr>
+        <tr>
+            <td><img src="6.jpg" width=220 height="220"> </td>
+            <td><img src="7.jpg" width=220 height="220"> </td>
+            <td><img src="8.jpg" width=220 height="220"> </td>
+            <td><img src="9.jpg" width=220 height="220"> </td>
+            <td><img src="10.jpg" width=220 height="220"> </td>
+        </tr>
+        <tr>
+            <td><img src="11.jpg" width=220 height="220"> </td>
+            <td><img src="12.jpg" width=220 height="220"> </td>
+            <td><img src="13.jpg" width=220 height="220"> </td>
+            <td><img src="14.jpg" width=220 height="220"> </td>
+            <td><img src="15.jpg" width=220 height="220"> </td>
+        </tr>
+        <tr>
+            <td><img src="16.jpg" width=220 height="220"> </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
